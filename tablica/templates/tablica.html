@@ -1,0 +1,7 @@
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <p>{{ post.title }}<p>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
